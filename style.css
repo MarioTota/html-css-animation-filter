@@ -146,3 +146,55 @@ p {
   from {transform: rotate(0);}
   to {transform: rotate(320deg);}
 }
+
+.rettangolospaziato {
+  width: 300px;
+  height: 150px;
+  border: 3px solid blue;
+  font-size: 30px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.rettangolobianco1 {
+  position: absolute;
+  background-color: coral;
+  width: 100px;
+  height: 23px;
+  bottom: -12px;
+  right: 50px;
+}
+.rettangolospaziato:hover .rettangolobianco1 {
+  right: 150px;
+  animation-name: mov1;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.rettangolobianco2 {
+  position: absolute;
+  background-color: coral;
+  width: 100px;
+  height: 23px;
+  top: -12px;
+  left: 50px;
+}
+.rettangolospaziato:hover .rettangolobianco2 {
+  left: 150px;
+  animation-name: mov2;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes mov1 {
+  from {right: 50px;}
+  to {right: 150px;}
+}
+@keyframes mov2 {
+  from {left: 50px;}
+  to {left: 150px;}
+}
