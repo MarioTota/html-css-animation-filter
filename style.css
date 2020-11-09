@@ -170,8 +170,8 @@ p {
   right: 150px;
   animation-name: mov1;
   animation-duration: 1s;
-  animation-direction: alternate;
   animation-timing-function: linear;
+  animation-fill-mode: forwards;
 }
 
 .rettangolobianco2 {
@@ -186,15 +186,17 @@ p {
   left: 150px;
   animation-name: mov2;
   animation-duration: 1s;
-  animation-direction: alternate;
   animation-timing-function: linear;
+  animation-fill-mode: forwards;
 }
 
 @keyframes mov1 {
-  from {right: 50px;}
-  to {right: 150px;}
+  0% {right: 50px;}
+  50% {right: 150px;}
+  100% {right: 50px;}
 }
 @keyframes mov2 {
-  from {left: 50px;}
-  to {left: 150px;}
+  0% {left: 50px;}
+  50% {left: 150px;}
+  100% {left: 50px;}
 }
