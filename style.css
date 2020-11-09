@@ -19,16 +19,15 @@ p {
 }
 .rettangolone {
   width: 100%;
-  background-color: lightgrey;
+  background-color: #F5F5F5;
   padding: 20px;
-  box-shadow: inset 2px 2px 4px grey;
+  box-shadow: inset 2px 2px 4px lightgrey;
   border-radius: 5px;
 }
 
 .quadrato1 {
   width: 100px;
   height: 100px;
-  background-color: lightgrey;
   border: 1px solid red;
   transition: all 1.4s ease 0.0s;
 }
@@ -42,8 +41,18 @@ p {
   background-color: red;
   transition: all 1.4s ease 0.0s;
 }
-.quadrato2 {
-  
+.quadrato2:active {
+  width: 100%;
+}
+
+.quadrato3 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  transition: all 0.3s ease 0.1s;
+}
+.quadrato3:hover {
+  border-radius: 50%;
 }
 @keyframes {
 }
